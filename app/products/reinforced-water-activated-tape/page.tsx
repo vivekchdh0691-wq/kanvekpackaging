@@ -54,7 +54,13 @@ export default function ReinforcedTape() {
 >
   Request Quote
 </a>
-
+<a
+  href="/reinforced-tape-tds.pdf"
+  download
+  className="border border-green-700 text-green-700 px-6 py-3 rounded-lg hover:bg-green-700 hover:text-white transition"
+>
+  Download TDS
+</a>
 
 
 </div>
