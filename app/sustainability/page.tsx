@@ -40,7 +40,7 @@ export default function Sustainability() {
         </h2>
 
         <p className="text-gray-700 leading-relaxed">
-          Water activated kraft tape is manufactured using strong
+          Our Water activated kraft tape is manufactured using strong
           kraft paper derived from renewable wood fibers and natural
           starch-based adhesives. These materials are biodegradable
           and sourced from sustainable raw materials, making them an
