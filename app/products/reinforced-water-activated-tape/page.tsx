@@ -54,6 +54,7 @@ export default function ReinforcedTape() {
 >
   Request Quote
 </a>
+<<<<<<< HEAD
 <a
   href="/reinforced-tape-tds.pdf"
   download
@@ -61,6 +62,10 @@ export default function ReinforcedTape() {
 >
   Download TDS
 </a>
+=======
+
+
+>>>>>>> 8082c8f (Updated sustainability page)
 
 
 </div>
