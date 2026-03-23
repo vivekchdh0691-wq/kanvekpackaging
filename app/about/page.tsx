@@ -81,7 +81,7 @@ export default function About() {
 
           <div className="p-8 bg-white shadow rounded-2xl">
             <h3 className="font-semibold mb-3 text-lg">
-              Standard Kraft Paper Tape
+              Non-Reinforced Kraft Paper Tape
             </h3>
             <p className="text-gray-600">
               Eco-friendly carton sealing solution suitable for general
