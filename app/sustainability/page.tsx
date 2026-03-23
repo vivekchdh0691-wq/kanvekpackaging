@@ -3,21 +3,32 @@ export default function Sustainability() {
     <main className="max-w-7xl mx-auto px-6 py-24 space-y-24">
 
       {/* HERO */}
-      <section className="max-w-4xl">
-        <h1 className="text-4xl font-bold text-green-800 mb-6">
-          Sustainable Packaging Solutions
-        </h1>
+    <section className="max-w-4xl">
+  <h2 className="text-3xl font-semibold mb-4">
+    Sustainability at Our Core
+  </h2>
 
-        <p className="text-lg text-gray-700 leading-relaxed">
-          At Kanvek Packaging, sustainability is at the core of our
-          packaging philosophy. We specialize in paper-based sealing
-          solutions such as reinforced water activated kraft tape,
-          designed to reduce plastic usage while ensuring strong,
-          secure and reliable carton sealing.
-        </p>
-      </section>
+  <p className="text-gray-700 leading-relaxed">
+    Sustainability is not an option—it is a responsibility. Our water
+    activated tapes are paper-based and integrate directly with corrugated
+    packaging, allowing them to be recycled without separation. This
+    significantly improves recycling efficiency and reduces packaging waste
+    across the supply chain.
+  </p>
 
+  <p className="text-gray-700 leading-relaxed mt-4">
+    Unlike conventional plastic tapes, water activated kraft tape is the
+    only existing ecological sealing method for carton packaging. It
+    guarantees secure sealing while ensuring respect for the environment
+    and the long-term sustainability of your shipments.
+  </p>
 
+  <p className="text-gray-700 leading-relaxed mt-4">
+    By helping businesses transition away from plastic-based packaging
+    materials, we actively contribute to reducing environmental impact
+    without compromising performance or reliability.
+  </p>
+</section>
       {/* WHY SUSTAINABLE */}
       <section>
         <h2 className="text-3xl font-semibold text-green-700 mb-6">
