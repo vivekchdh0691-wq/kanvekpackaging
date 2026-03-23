@@ -37,7 +37,12 @@ export default function About() {
             real-world logistics understanding to create products that perform
             reliably across diverse packaging environments.
           </p>
-
+          <p className="text-gray-700 leading-relaxed mb-4">
+  With complete in-house manufacturing capabilities, we maintain full
+  control over quality, consistency, and product performance. This allows
+  us to deliver reliable and scalable packaging solutions tailored to the
+  needs of modern businesses.
+</p>
           <p className="text-gray-700 leading-relaxed">
             Our approach is centered on delivering solutions that integrate
             seamlessly with corrugated cartons, ensuring secure sealing,
