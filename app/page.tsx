@@ -9,70 +9,76 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="bg-gray-50 text-gray-800">
+{/* HERO */}
+<section className="relative overflow-hidden bg-gradient-to-br from-white via-green-50 to-green-100 pt-32 pb-24">
 
-      {/* HERO */}
-      <section className="bg-gradient-to-br from-white via-green-50 to-green-100 pt-28 pb-20">
+  {/* BACKGROUND GLOW LAYERS */}
+  <div className="absolute top-[-100px] right-[-100px] w-[500px] h-[500px] bg-green-200 rounded-full blur-[140px] opacity-30"></div>
+  <div className="absolute bottom-[-120px] left-[-120px] w-[400px] h-[400px] bg-green-100 rounded-full blur-[120px] opacity-40"></div>
 
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
+  <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-          {/* LEFT */}
-          <div>
+    {/* LEFT */}
+    <div>
 
-            <div className="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm mb-4">
-              Eco-Friendly Packaging Solution 🌱
-            </div>
+      {/* BADGE */}
+      <div className="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm mb-5 shadow-sm">
+        Eco-Friendly Packaging Solution 🌱
+      </div>
 
-            <h1 className="text-5xl font-bold text-green-900 leading-tight mb-6 max-w-xl">
-              Reinforced Water Activated Tape <br />
-              For Secure Carton Sealing
-            </h1>
+      {/* HEADING */}
+      <h1 className="text-5xl lg:text-6xl font-bold text-green-900 leading-tight mb-6 max-w-xl">
+        Reinforced Water Activated Tape
+        <span className="block text-green-700 mt-2">
+          For Secure Carton Sealing
+        </span>
+      </h1>
 
-            <p className="text-gray-700 text-lg mb-8 leading-relaxed max-w-lg">
-              High-performance kraft paper tape with fiberglass reinforcement,
-              designed for strong, tamper-evident sealing. Ideal for e-commerce,
-              logistics and export packaging while reducing plastic usage.
-            </p>
+      {/* SUBTEXT */}
+      <p className="text-gray-700 text-lg mb-10 leading-relaxed max-w-lg">
+        High-performance kraft paper tape with fiberglass reinforcement,
+        designed for strong, tamper-evident sealing. Ideal for e-commerce,
+        logistics and export packaging while reducing plastic usage.
+      </p>
 
-            <div className="flex gap-4">
-              <Link
-                href="/contact"
-                className="bg-green-700 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-800 hover:scale-105 transition"
-              >
-                Get a Quote
-              </Link>
+      {/* BUTTONS */}
+      <div className="flex gap-4">
 
-              <Link
-                href="/products"
-                className="border border-green-700 text-green-700 px-6 py-3 rounded-lg hover:bg-green-700 hover:text-white transition"
-              >
-                View Products
-              </Link>
-            </div>
+        <a
+          href="/contact"
+          className="bg-green-700 text-white px-7 py-3 rounded-xl shadow-lg hover:bg-green-800 hover:scale-105 transition"
+        >
+          Get a Quote
+        </a>
 
-          </div>
+        <a
+          href="/products"
+          className="border border-green-700 text-green-700 px-7 py-3 rounded-xl hover:bg-green-700 hover:text-white transition"
+        >
+          View Products
+        </a>
 
-        {/* RIGHT IMAGE */}
-<div className="relative flex justify-center items-center">
+      </div>
 
-  {/* BACKGROUND GLOW (offset for depth) */}
-  <div className="absolute right-10 top-10 w-[420px] h-[420px] bg-green-300 rounded-full blur-[120px] opacity-30"></div>
+    </div>
 
-  {/* IMAGE CONTAINER */}
-  <div className="relative z-10">
+    {/* RIGHT IMAGE */}
+    <div className="relative flex justify-center items-center">
 
-    <img
-      src="/hero.png"
-      alt="Water Activated Tape"
-      className="w-[380px] lg:w-[420px] object-contain drop-shadow-2xl"
-    />
+      {/* GLOW */}
+      <div className="absolute right-10 top-10 w-[420px] h-[420px] bg-green-300 rounded-full blur-[130px] opacity-30"></div>
+
+      {/* FLOATING IMAGE */}
+      <img
+        src="/hero.png"
+        alt="Water Activated Tape"
+        className="relative w-[380px] lg:w-[440px] object-contain drop-shadow-[0_40px_60px_rgba(0,0,0,0.15)] animate-floatSlow"
+      />
+
+    </div>
 
   </div>
-
-</div>
-
-        </div>
-      </section>
-
+</section>
       {/* WHY CHOOSE */}
       <section className="bg-gradient-to-br from-green-50 to-green-100 py-20">
         <div className="max-w-7xl mx-auto px-6">
@@ -191,7 +197,7 @@ export default function Home() {
 
         <Link
           href="/contact"
-          className="inline-block mt-6 bg-green-700 text-white px-7 py-3 rounded-lg font-semibold hover:bg-green-800 transition"
+          className="inline-block mt-6 bg-green-700 text-white px-7 py-3 rounded-xl font-semibold hover:bg-green-800 transition"
         >
           Get a Quote
         </Link>
