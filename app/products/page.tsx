@@ -78,7 +78,7 @@ export default function ProductsPage() {
           </Link>
 
           {/* PRODUCT 3 */}
-          <Link href="/products/custom-printed-tape" className="group">
+          <Link href="/products/non-reinforced-wat" className="group">
             <div className="relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-500">
 
               <div className="overflow-hidden">
