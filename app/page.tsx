@@ -71,12 +71,19 @@ return ( <main className="bg-gray-50 text-gray-800">
     
 
       {/* IMAGE */}
-     <img
-  src="/hero.png"
-  alt="Water Activated Tape"
-  className="relative z-10 object-contain w-[420px] drop-shadow-2xl"
-/>
+     <div className="flex justify-center">
 
+  <div className="relative bg-white rounded-2xl p-4 shadow-xl">
+
+    <img
+      src="/hero.png"
+      alt="Water Activated Tape"
+      className="object-contain w-[420px]"
+    />
+
+  </div>
+
+</div>
     </div>
       </div>
     </div>
