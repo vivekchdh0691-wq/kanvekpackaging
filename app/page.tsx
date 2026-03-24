@@ -52,23 +52,26 @@ return ( <main className="bg-gray-50 text-gray-800">
 
     </div>
 
-    <div className="relative">
-  <div className="absolute inset-0 bg-gradient-to-r from-green-100 to-transparent rounded-2xl blur-2xl opacity-40"></div>
+   <div className="relative flex justify-center">
+
+  {/* background glow */}
+  <div className="absolute w-[420px] h-[420px] bg-green-200 rounded-full blur-3xl opacity-40"></div>
 
   <Image
-    src="/hero.png"
-    alt="Water Activated Tape Packaging"
+    src="/tape.png"
+    alt="Water Activated Tape"
     width={650}
     height={450}
-    className="relative rounded-2xl shadow-2xl object-contain bg-transparent"
+    className="relative z-10 object-contain scale-105"
   />
+
 </div>
 
   </div>
 
 </section>
 
-  <section className="bg-gray-50 py-20">
+  <section className="bg-gradient-to-br from-green-50 via-white to-green-100 py-20">
   <div className="max-w-7xl mx-auto px-6">
 
     <h2 className="text-3xl font-bold text-center text-gray-900">
