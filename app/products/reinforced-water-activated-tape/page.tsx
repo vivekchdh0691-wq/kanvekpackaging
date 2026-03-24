@@ -83,7 +83,7 @@ export default function ReinforcedTape() {
               <h3 className="font-semibold text-lg mb-3">Permanent Bond</h3>
               <p className="text-gray-600 text-sm">
                 The adhesive penetrates into the fibers of corrugated cartons,
-                creating a strong and permanent seal that cannot be removed without damage. :contentReference[oaicite:0]{index=0}
+                creating a strong and permanent seal that cannot be removed without damage. 
               </p>
             </div>
 
@@ -91,7 +91,7 @@ export default function ReinforcedTape() {
               <h3 className="font-semibold text-lg mb-3">Eco-Friendly Packaging</h3>
               <p className="text-gray-600 text-sm">
                 Made from kraft paper and starch adhesive, it is fully recyclable,
-                biodegradable and derived from renewable materials. :contentReference[oaicite:1]{index=1}
+                biodegradable and derived from renewable materials. 
               </p>
             </div>
 
@@ -99,7 +99,7 @@ export default function ReinforcedTape() {
               <h3 className="font-semibold text-lg mb-3">High Strength & Security</h3>
               <p className="text-gray-600 text-sm">
                 Reinforced fibers ensure superior strength and tamper evidence,
-                making it ideal for heavy-duty and export packaging. :contentReference[oaicite:2]{index=2}
+                making it ideal for heavy-duty and export packaging. 
               </p>
             </div>
 
