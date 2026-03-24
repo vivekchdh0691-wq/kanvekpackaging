@@ -11,55 +11,78 @@ export default function Home() {
     <main className="bg-gray-50 text-gray-800">
 
       {/* HERO */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-white via-green-50 to-green-100 pt-32 pb-24">
+     <section className="relative bg-gradient-to-br from-green-50 via-white to-green-100 overflow-hidden">
 
-        <div className="absolute top-[-100px] right-[-100px] w-[500px] h-[500px] bg-green-200 rounded-full blur-[140px] opacity-30"></div>
-        <div className="absolute bottom-[-120px] left-[-120px] w-[400px] h-[400px] bg-green-100 rounded-full blur-[120px] opacity-40"></div>
+  <div className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
 
-        <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+    {/* LEFT */}
+    <div className="space-y-6">
 
-          {/* LEFT */}
-          <div>
-            <div className="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm mb-5 shadow-sm">
-              Eco-Friendly Packaging Solution 🌱
-            </div>
+      <span className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium">
+        Eco-Friendly Packaging Solution 🌱
+      </span>
 
-            <h1 className="text-5xl lg:text-6xl font-bold text-green-900 leading-tight mb-6 max-w-xl">
-              Reinforced Water Activated Tape
-              <span className="block text-green-700 mt-2">
-                For Secure Carton Sealing
-              </span>
-            </h1>
+      <h1 className="text-5xl font-bold text-gray-900 leading-tight">
+        Reinforced Water Activated Tape <br />
+        <span className="text-green-700">
+          For Secure Carton Sealing
+        </span>
+      </h1>
 
-            <p className="text-gray-700 text-lg mb-10 leading-relaxed max-w-lg">
-              High-performance kraft paper tape with fiberglass reinforcement,
-              designed for strong, tamper-evident sealing.
-            </p>
+      <p className="text-gray-600 text-lg">
+        High-performance kraft paper tape with fiberglass reinforcement.
+        Ideal for e-commerce, logistics, and export packaging — while reducing plastic usage.
+      </p>
 
-            <div className="flex gap-4">
-              <a href="/contact" className="bg-green-700 text-white px-7 py-3 rounded-xl shadow-lg hover:bg-green-800 transition">
-                Get a Quote
-              </a>
+      <div className="flex gap-4">
+        <a
+          href="/contact"
+          className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition"
+        >
+          Get a Quote
+        </a>
 
-              <a href="/products" className="border border-green-700 text-green-700 px-7 py-3 rounded-xl hover:bg-green-700 hover:text-white transition">
-                View Products
-              </a>
-            </div>
-          </div>
+        <a
+          href="/products"
+          className="border border-green-700 text-green-700 px-6 py-3 rounded-lg hover:bg-green-50 transition"
+        >
+          View Products
+        </a>
+      </div>
+    </div>
 
-          {/* RIGHT */}
-          <div className="relative flex justify-center items-center">
-            <div className="absolute right-10 top-10 w-[420px] h-[420px] bg-green-300 rounded-full blur-[130px] opacity-30"></div>
+    {/* RIGHT IMAGE */}
+    <div className="relative flex justify-center">
 
-            <img
-              src="/hero.png"
-              alt="Water Activated Tape"
-              className="relative w-[380px] lg:w-[440px] object-contain drop-shadow-[0_40px_60px_rgba(0,0,0,0.15)] animate-floatSlow"
-            />
-          </div>
+      <div className="absolute w-80 h-80 bg-green-200 rounded-full blur-3xl opacity-30"></div>
 
-        </div>
-      </section>
+      <img
+        src="/hero.png"
+        alt="Water Activated Tape"
+        className="relative w-[420px] drop-shadow-2xl rounded-xl animate-floatSlow"
+      />
+    </div>
+
+  </div>
+
+</section>
+      
+      <section className="py-16 bg-white">
+  <div className="max-w-7xl mx-auto px-6 text-center">
+
+    <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+      Trusted by Growing Businesses Across India
+    </h2>
+
+    <div className="flex justify-center gap-12 text-gray-500 text-lg font-medium">
+      <span>✔ Eco-Friendly</span>
+      <span>✔ Tamper Proof</span>
+      <span>✔ Export Ready</span>
+      <span>✔ Cost Efficient</span>
+    </div>
+
+  </div>
+</section>
 
       {/* WHY CHOOSE */}
       <section className="bg-gradient-to-br from-green-50 to-green-100 py-20">
@@ -122,7 +145,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
           <Link href="/products/reinforced-water-activated-tape">
-            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition cursor-pointer">
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col hover:shadow-xl transition duration-300 hover:-translate-y-1">
               <img src="/tape.jpg" alt="Tape" className="w-full h-56 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">
