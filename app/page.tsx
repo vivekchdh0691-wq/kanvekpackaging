@@ -56,7 +56,7 @@ return ( <main className="bg-gray-50 text-gray-800">
   <div className="absolute inset-0 bg-gradient-to-r from-green-100 to-transparent rounded-2xl blur-2xl opacity-40"></div>
 
   <Image
-    src="/hero.jpg"
+    src="/hero.png"
     alt="Water Activated Tape Packaging"
     width={650}
     height={450}
