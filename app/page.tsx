@@ -28,13 +28,13 @@ return ( <main className="bg-gray-50 text-gray-800">
       </div>
 
       {/* HEADING */}
-      <h1 className="text-5xl font-bold text-green-800 leading-tight mb-6">
+      <h1 className="text-5xl font-bold text-green-900 leading-tight mb-6">
         Reinforced Water Activated Tape <br />
         For Secure Carton Sealing
       </h1>
 
       {/* SUBTEXT */}
-      <p className="text-gray-600 text-lg mb-8 leading-relaxed">
+      <p className="text-gray-700 text-lg mb-8 leading-relaxed">
         High-performance kraft paper tape with fiberglass reinforcement,
         designed for strong, tamper-evident sealing. Ideal for e-commerce,
         logistics and export packaging while reducing plastic usage.
@@ -90,7 +90,7 @@ return ( <main className="bg-gray-50 text-gray-800">
   </section>
   
   
-  <section className="bg-gradient-to-br from-green-50 via-white to-green-100 py-20">
+  <section className="bg-gradient-to-br from-green-50 to-green-100 py-20">
   <div className="max-w-7xl mx-auto px-6">
 
     <h2 className="text-3xl font-bold text-center text-gray-900">
