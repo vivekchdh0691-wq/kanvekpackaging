@@ -339,52 +339,7 @@ return ( <main className="bg-gray-50 text-gray-800">
 
 </section>
 
-{/* TRUST SECTION */}
 
-<section className="bg-white py-20">
-
-<div className="max-w-6xl mx-auto px-6 text-center">
-
-<h2 className="text-3xl font-bold mb-6">
-Trusted by Businesses Across India
-</h2>
-
-<p className="text-gray-600 max-w-2xl mx-auto mb-12">
-Our reinforced water activated kraft tapes are used by
-e-commerce sellers, logistics companies, and manufacturers
-for secure and sustainable carton sealing.
-</p>
-
-<div className="grid md:grid-cols-4 gap-8 text-gray-700">
-
-<div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-<h3 className="text-2xl font-bold text-green-700">500+</h3>
-<p className="text-sm mt-2">Business Customers</p>
-</div>
-
-<div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-<h3 className="text-2xl font-bold text-green-700">10M+</h3>
-<p className="text-sm mt-2">Cartons Sealed</p>
-</div>
-
-<div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-<h3 className="text-2xl font-bold text-green-700">20+</h3>
-<p className="text-sm mt-2">Cities Supplied</p>
-</div>
-
-<div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-<h3 className="text-2xl font-bold text-green-700">Eco</h3>
-<p className="text-sm mt-2">Plastic-Free Packaging</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-  
 
 
 
