@@ -1,84 +1,66 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Kanvek Packaging Solutions | Reinforced Water Activated Tape Manufacturer",
   description:
-    "Kanvek Packaging Solutions provides reinforced water activated kraft tape for secure carton sealing. Eco-friendly packaging solutions for ecommerce, logistics and manufacturing industries.",
+    "Kanvek Packaging Solutions provides reinforced water activated kraft tape for secure carton sealing.",
 };
-
-import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="bg-gray-50 text-gray-800">
-{/* HERO */}
-<section className="relative overflow-hidden bg-gradient-to-br from-white via-green-50 to-green-100 pt-32 pb-24">
 
-  {/* BACKGROUND GLOW LAYERS */}
-  <div className="absolute top-[-100px] right-[-100px] w-[500px] h-[500px] bg-green-200 rounded-full blur-[140px] opacity-30"></div>
-  <div className="absolute bottom-[-120px] left-[-120px] w-[400px] h-[400px] bg-green-100 rounded-full blur-[120px] opacity-40"></div>
+      {/* HERO */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-white via-green-50 to-green-100 pt-32 pb-24">
 
-  <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="absolute top-[-100px] right-[-100px] w-[500px] h-[500px] bg-green-200 rounded-full blur-[140px] opacity-30"></div>
+        <div className="absolute bottom-[-120px] left-[-120px] w-[400px] h-[400px] bg-green-100 rounded-full blur-[120px] opacity-40"></div>
 
-    {/* LEFT */}
-    <div>
+        <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-      {/* BADGE */}
-      <div className="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm mb-5 shadow-sm">
-        Eco-Friendly Packaging Solution 🌱
-      </div>
+          {/* LEFT */}
+          <div>
+            <div className="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm mb-5 shadow-sm">
+              Eco-Friendly Packaging Solution 🌱
+            </div>
 
-      {/* HEADING */}
-      <h1 className="text-5xl lg:text-6xl font-bold text-green-900 leading-tight mb-6 max-w-xl">
-        Reinforced Water Activated Tape
-        <span className="block text-green-700 mt-2">
-          For Secure Carton Sealing
-        </span>
-      </h1>
+            <h1 className="text-5xl lg:text-6xl font-bold text-green-900 leading-tight mb-6 max-w-xl">
+              Reinforced Water Activated Tape
+              <span className="block text-green-700 mt-2">
+                For Secure Carton Sealing
+              </span>
+            </h1>
 
-      {/* SUBTEXT */}
-      <p className="text-gray-700 text-lg mb-10 leading-relaxed max-w-lg">
-        High-performance kraft paper tape with fiberglass reinforcement,
-        designed for strong, tamper-evident sealing. Ideal for e-commerce,
-        logistics and export packaging while reducing plastic usage.
-      </p>
+            <p className="text-gray-700 text-lg mb-10 leading-relaxed max-w-lg">
+              High-performance kraft paper tape with fiberglass reinforcement,
+              designed for strong, tamper-evident sealing.
+            </p>
 
-      {/* BUTTONS */}
-      <div className="flex gap-4">
+            <div className="flex gap-4">
+              <a href="/contact" className="bg-green-700 text-white px-7 py-3 rounded-xl shadow-lg hover:bg-green-800 transition">
+                Get a Quote
+              </a>
 
-        <a
-          href="/contact"
-          className="bg-green-700 text-white px-7 py-3 rounded-xl shadow-lg hover:bg-green-800 hover:scale-105 transition"
-        >
-          Get a Quote
-        </a>
+              <a href="/products" className="border border-green-700 text-green-700 px-7 py-3 rounded-xl hover:bg-green-700 hover:text-white transition">
+                View Products
+              </a>
+            </div>
+          </div>
 
-        <a
-          href="/products"
-          className="border border-green-700 text-green-700 px-7 py-3 rounded-xl hover:bg-green-700 hover:text-white transition"
-        >
-          View Products
-        </a>
+          {/* RIGHT */}
+          <div className="relative flex justify-center items-center">
+            <div className="absolute right-10 top-10 w-[420px] h-[420px] bg-green-300 rounded-full blur-[130px] opacity-30"></div>
 
-      </div>
+            <img
+              src="/hero.png"
+              alt="Water Activated Tape"
+              className="relative w-[380px] lg:w-[440px] object-contain drop-shadow-[0_40px_60px_rgba(0,0,0,0.15)] animate-floatSlow"
+            />
+          </div>
 
-    </div>
+        </div>
+      </section>
 
-    {/* RIGHT IMAGE */}
-    <div className="relative flex justify-center items-center">
-
-      {/* GLOW */}
-      <div className="absolute right-10 top-10 w-[420px] h-[420px] bg-green-300 rounded-full blur-[130px] opacity-30"></div>
-
-      {/* FLOATING IMAGE */}
-      <img
-        src="/hero.png"
-        alt="Water Activated Tape"
-        className="relative w-[380px] lg:w-[440px] object-contain drop-shadow-[0_40px_60px_rgba(0,0,0,0.15)] animate-floatSlow"
-      />
-
-    </div>
-
-  </div>
-</section>
       {/* WHY CHOOSE */}
       <section className="bg-gradient-to-br from-green-50 to-green-100 py-20">
         <div className="max-w-7xl mx-auto px-6">
@@ -141,7 +123,7 @@ export default function Home() {
 
           <Link href="/products/reinforced-water-activated-tape">
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition cursor-pointer">
-              <img src="/tape.jpg" className="w-full h-56 object-cover" />
+              <img src="/tape.jpg" alt="Tape" className="w-full h-56 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">
                   Reinforced Water Activated Tape
@@ -155,7 +137,7 @@ export default function Home() {
 
           <Link href="/products/water-activated-dispenser">
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition cursor-pointer">
-              <img src="/dispenser.jpg" className="w-full h-56 object-cover" />
+              <img src="/dispenser.jpg" alt="Dispenser" className="w-full h-56 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">
                   Water Activated Tape Dispenser
@@ -169,7 +151,7 @@ export default function Home() {
 
           <Link href="/products/custom-printed-tape">
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition cursor-pointer">
-              <img src="/custom-tape.jpg" className="w-full h-56 object-cover" />
+              <img src="/custom-tape.jpg" alt="Custom Tape" className="w-full h-56 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">
                   Custom Printed Kraft Tape
