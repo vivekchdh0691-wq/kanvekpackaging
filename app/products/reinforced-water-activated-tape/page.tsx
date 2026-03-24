@@ -121,7 +121,7 @@ export default function ReinforcedTape() {
             <div className="bg-white p-6 rounded-xl shadow">
               <h3 className="font-semibold mb-3">Reduced Packaging Cost</h3>
               <p className="text-gray-600 text-sm">
-                Only one strip is required for sealing, unlike plastic tape which often needs multiple layers, reducing overall material usage. :contentReference[oaicite:3]{index=3}
+                Only one strip is required for sealing, unlike plastic tape which often needs multiple layers, reducing overall material usage. 
               </p>
             </div>
 
@@ -135,7 +135,7 @@ export default function ReinforcedTape() {
             <div className="bg-white p-6 rounded-xl shadow">
               <h3 className="font-semibold mb-3">Better Unboxing Experience</h3>
               <p className="text-gray-600 text-sm">
-                Clean and professional sealing improves customer satisfaction and packaging presentation. :contentReference[oaicite:4]{index=4}
+                Clean and professional sealing improves customer satisfaction and packaging presentation. 
               </p>
             </div>
 
