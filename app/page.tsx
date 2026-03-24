@@ -52,13 +52,17 @@ return ( <main className="bg-gray-50 text-gray-800">
 
     </div>
 
-    <Image
-      src="/hero.jpg"
-      alt="Water Activated Tape Packaging"
-      width={650}
-      height={450}
-      className="rounded-2xl shadow-xl"
-    />
+    <div className="relative">
+  <div className="absolute inset-0 bg-gradient-to-r from-green-100 to-transparent rounded-2xl blur-2xl opacity-40"></div>
+
+  <Image
+    src="/tape.jpg"
+    alt="Water Activated Tape Packaging"
+    width={650}
+    height={450}
+    className="relative rounded-2xl shadow-2xl object-contain bg-transparent"
+  />
+</div>
 
   </div>
 
