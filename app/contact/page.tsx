@@ -1,22 +1,23 @@
 "use client";
+
 import { useState } from "react";
 
-let emailjs;
+let emailjs: any = null;
 
 const loadEmailJS = async () => {
   if (!emailjs) {
-    emailjs = await import("@emailjs/browser");
+    const module = await import("@emailjs/browser");
+    emailjs = module.default;
   }
   return emailjs;
 };
 
 export default function ContactPage() {
-
   const [form, setForm] = useState({
     name: "",
     email: "",
     phone: "",
-    message: ""
+    message: "",
   });
 
   const handleChange = (e: any) => {
@@ -29,7 +30,7 @@ export default function ContactPage() {
     try {
       const emailjsLib = await loadEmailJS();
 
-      await emailjsLib.default.send(
+      await emailjsLib.send(
         "service_xrvz4aw",
         "template_vz1mvlb",
         form,
@@ -45,26 +46,25 @@ export default function ContactPage() {
 
   return (
     <main className="max-w-7xl mx-auto px-6 py-24">
-
       <h1 className="text-4xl font-bold text-center mb-16">
         Contact Us
       </h1>
 
       <div className="grid md:grid-cols-2 gap-16">
-
         {/* LEFT */}
         <div className="space-y-10">
-
           <div className="bg-green-50 p-8 rounded-2xl">
             <h2 className="text-2xl font-bold mb-6">
               Contact Information
             </h2>
 
             <div className="space-y-6 text-gray-700">
-
               <div>
                 <p className="font-semibold">Phone</p>
-                <a href="tel:+917011372679" className="text-green-700 hover:underline">
+                <a
+                  href="tel:+917011372679"
+                  className="text-green-700 hover:underline"
+                >
                   +91 7011372679
                 </a>
               </div>
@@ -80,13 +80,12 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <p className="font-semibold">Head-Office Address</p>
+                <p className="font-semibold">Head Office</p>
                 <p>
-                  Kakrola Housing Complex,<br />
-                  New Delhi, India
+                  Kakrola Housing Complex, New Delhi,<br />
+                  Delhi – 110078, India
                 </p>
               </div>
-
             </div>
           </div>
 
@@ -101,14 +100,11 @@ export default function ContactPage() {
               <li>✔ Reliable delivery across India</li>
               <li>✔ Expert packaging consultation</li>
             </ul>
-
           </div>
-
         </div>
 
-        {/* RIGHT FORM */}
+        {/* FORM */}
         <form onSubmit={sendEmail} className="space-y-6">
-
           <input
             type="text"
             name="name"
@@ -146,9 +142,7 @@ export default function ContactPage() {
           >
             Send Enquiry
           </button>
-
         </form>
-
       </div>
 
       {/* MAP */}
@@ -157,11 +151,10 @@ export default function ContactPage() {
           src="https://maps.google.com/maps?q=Kakrola%20Housing%20Complex%20New%20Delhi&output=embed"
           width="100%"
           height="350"
-          style={{ border: "0" }}
+          style={{ border: 0 }}
           loading="lazy"
         ></iframe>
       </div>
-
     </main>
   );
 }
