@@ -15,35 +15,44 @@ return ( <main className="bg-gray-50 text-gray-800">
 
 
   {/* HERO */}
-  <section className="bg-gradient-to-b from-green-50 to-white py-28">
+<section className="bg-gradient-to-br from-green-50 via-white to-green-100 py-24">
 
-  <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+  <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
-    <div className="max-w-xl">
+    {/* LEFT CONTENT */}
+    <div>
 
-      <h1 className="text-5xl font-bold text-green-800 leading-tight">
-        Reinforced Water Activated Tape
-        <br />
+      {/* BADGE */}
+      <div className="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm mb-4 animate-pulse">
+        Eco-Friendly Packaging Solution 🌱
+      </div>
+
+      {/* HEADING */}
+      <h1 className="text-5xl font-bold text-green-800 leading-tight mb-6">
+        Reinforced Water Activated Tape <br />
         For Secure Carton Sealing
       </h1>
 
-      <p className="mt-6 text-lg text-gray-600">
-        Eco-friendly fiberglass reinforced kraft tape designed for strong,
-        tamper-evident carton sealing in ecommerce, logistics and export packaging.
+      {/* SUBTEXT */}
+      <p className="text-gray-600 text-lg mb-8 leading-relaxed">
+        High-performance kraft paper tape with fiberglass reinforcement,
+        designed for strong, tamper-evident sealing. Ideal for e-commerce,
+        logistics and export packaging while reducing plastic usage.
       </p>
 
-      <div className="mt-8 flex gap-4">
+      {/* CTA BUTTONS */}
+      <div className="flex gap-4">
 
         <a
           href="/contact"
-          className="bg-green-700 text-white px-7 py-3 rounded-lg hover:bg-green-800 transition"
+          className="bg-green-700 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-800 hover:scale-105 transition"
         >
           Get a Quote
         </a>
 
         <a
           href="/products"
-          className="border border-green-700 text-green-700 px-7 py-3 rounded-lg hover:bg-green-700 hover:text-white transition"
+          className="border border-green-700 text-green-700 px-6 py-3 rounded-lg hover:bg-green-700 hover:text-white transition"
         >
           View Products
         </a>
@@ -52,25 +61,33 @@ return ( <main className="bg-gray-50 text-gray-800">
 
     </div>
 
-   <div className="relative flex justify-center">
+    {/* RIGHT IMAGE */}
+    <div className="relative flex justify-center">
 
-  {/* background glow */}
-  <div className="absolute w-[420px] h-[420px] bg-green-200 rounded-full blur-3xl opacity-40"></div>
+      {/* GLOW BACKGROUND */}
+      <div className="absolute w-[420px] h-[420px] bg-green-200 rounded-full blur-3xl opacity-40 animate-pulse"></div>
 
-  <Image
-    src="/hero.png"
-    alt="Water Activated Tape"
-    width={650}
-    height={450}
-    className="relative z-10 object-contain scale-105"
-  />
+      {/* FLOATING BADGES */}
+      <div className="absolute top-10 left-0 bg-white px-4 py-2 rounded-lg shadow-md text-sm">
+        100% Recyclable
+      </div>
 
-</div>
+      <div className="absolute bottom-10 right-0 bg-white px-4 py-2 rounded-lg shadow-md text-sm">
+        Plastic-Free Packaging
+      </div>
+
+      {/* IMAGE */}
+      <img
+        src="/tape.png"
+        alt="Water Activated Tape"
+        className="relative z-10 object-contain w-[500px] drop-shadow-xl animate-[float_4s_ease-in-out_infinite]"
+      />
+
+    </div>
 
   </div>
 
 </section>
-
   <section className="bg-gradient-to-br from-green-50 via-white to-green-100 py-20">
   <div className="max-w-7xl mx-auto px-6">
 
