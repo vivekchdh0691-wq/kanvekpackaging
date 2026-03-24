@@ -72,11 +72,11 @@ business@kanvekpackaging.com
 </div>
 
 <div>
-<p className="font-semibold">Address</p>
+<p className="font-semibold">Head-Office Address</p>
 <p>
-Killa No. 68/7/2 min, 8 min,<br/>
-Jasaur Kheri Road, Rohad,<br/>
-Haryana – 124501, India
+Plot No. 407, KH No. 15/6,<br/>
+Kakrola Housing Complex, New Delhi,<br/>
+Delhi – 110078, India
 </p>
 </div>
 
@@ -154,8 +154,8 @@ Send Enquiry
 
 <div className="mt-16 rounded-2xl overflow-hidden shadow">
 
-<iframe
-src="https://www.google.com/maps?q=Jasaur%20Kheri%20Road%20Rohad%20Haryana&output=embed"
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218.90118323519619!2d77.02795735637936!3d28.617203811065167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d054605bffd5f%3A0x6d6a7705ebbace09!2sManoj%20R%20Kumar%20%26%20Co.!5e0!3m2!1sen!2sin!4v1774346890009!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 width="100%"
 height="350"
 style={{ border: 0 }}
