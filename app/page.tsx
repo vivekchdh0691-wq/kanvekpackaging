@@ -58,7 +58,7 @@ return ( <main className="bg-gray-50 text-gray-800">
   <div className="absolute w-[420px] h-[420px] bg-green-200 rounded-full blur-3xl opacity-40"></div>
 
   <Image
-    src="/tape.png"
+    src="/hero.png"
     alt="Water Activated Tape"
     width={650}
     height={450}
