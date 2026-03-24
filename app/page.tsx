@@ -65,23 +65,17 @@ return ( <main className="bg-gray-50 text-gray-800">
     <div className="relative flex justify-center">
 
       {/* GLOW BACKGROUND */}
-      <div className="absolute w-[420px] h-[420px] bg-green-200 rounded-full blur-3xl opacity-40 animate-pulse"></div>
+      <div className="relative flex justify-center items-center bg-white/40 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+     <div className="absolute w-[350px] h-[350px] bg-green-100 rounded-full blur-2xl opacity-30"></div>
 
-      {/* FLOATING BADGES */}
-      <div className="absolute top-10 left-0 bg-white px-4 py-2 rounded-lg shadow-md text-sm">
-        100% Recyclable
-      </div>
-
-      <div className="absolute bottom-10 right-0 bg-white px-4 py-2 rounded-lg shadow-md text-sm">
-        Plastic-Free Packaging
-      </div>
+    
 
       {/* IMAGE */}
-      <img
-        src="/hero.png"
-        alt="Water Activated Tape"
-        className="relative z-10 object-contain w-[500px] drop-shadow-xl animate-[float_4s_ease-in-out_infinite]"
-      />
+     <img
+  src="/hero.png"
+  alt="Water Activated Tape"
+  className="relative z-10 object-contain w-[420px] drop-shadow-2xl"
+/>
 
     </div>
 
