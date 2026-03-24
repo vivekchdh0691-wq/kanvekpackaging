@@ -1,158 +1,86 @@
-import Link from "next/link";
-
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-gray-300 mt-20">
+    <footer className="bg-[#0b1a33] text-gray-300 pt-16 pb-6">
 
-      <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
 
-        {/* Company */}
+        {/* COMPANY */}
         <div>
-  <h3 className="text-white font-semibold text-lg mb-4">
-    Kanvek Packaging
-  </h3>
+          <h3 className="text-white text-lg font-semibold mb-4">
+            Kanvek Packaging
+          </h3>
 
-  <p className="text-gray-400 mb-6">
-    Leading supplier of sustainable water-activated tapes for
-    e-commerce and export packaging.
-  </p>
+          <p className="text-sm leading-relaxed">
+            Leading supplier of sustainable water-activated tapes for e-commerce and export packaging.
+          </p>
+        </div>
 
-  <div className="flex gap-4">
-
-    <a
-      href="#"
-      className="bg-slate-800 p-2 rounded hover:bg-green-700 transition"
-    >
-      <span className="text-white text-sm">in</span>
-    </a>
-
-    <a
-      href="#"
-      className="bg-slate-800 p-2 rounded hover:bg-green-700 transition"
-    >
-      <span className="text-white text-sm">f</span>
-    </a>
-
-    <a
-      href="#"
-      className="bg-slate-800 p-2 rounded hover:bg-green-700 transition"
-    >
-      <span className="text-white text-sm">ig</span>
-    </a>
-
-  </div>
-</div>
-
-        {/* Quick Links */}
+        {/* QUICK LINKS */}
         <div>
-          <h3 className="text-white font-semibold text-lg mb-4">
+          <h3 className="text-white text-lg font-semibold mb-4">
             Quick Links
           </h3>
 
-          <ul className="space-y-3">
-
-            <li>
-              <Link href="/" className="hover:text-white">
-                Home
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/about" className="hover:text-white">
-                About
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/products" className="hover:text-white">
-                Products
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/contact" className="hover:text-white">
-                Contact
-              </Link>
-            </li>
-
+          <ul className="space-y-2 text-sm">
+            <li><a href="/" className="hover:text-white">Home</a></li>
+            <li><a href="/about" className="hover:text-white">About</a></li>
+            <li><a href="/products" className="hover:text-white">Products</a></li>
+            <li><a href="/contact" className="hover:text-white">Contact</a></li>
           </ul>
         </div>
 
-
-        {/* Products */}
+        {/* PRODUCTS */}
         <div>
-          <h3 className="text-white font-semibold text-lg mb-4">
+          <h3 className="text-white text-lg font-semibold mb-4">
             Products
           </h3>
 
-          <ul className="space-y-3">
-
+          <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/products/non-reinforced-water-activated-tape" className="hover:text-white">
+              <a href="/products/non-reinforced-wat" className="hover:text-white">
                 Non-Reinforced WAT
-              </Link>
+              </a>
             </li>
 
             <li>
-              <Link href="/products/reinforced-water-activated-tape" className="hover:text-white">
+              <a href="/products/reinforced-water-activated-tape" className="hover:text-white">
                 Reinforced WAT
-              </Link>
+              </a>
             </li>
 
-            <li>
-              <Link href="/products/custom-printed-kraft-tape" className="hover:text-white">
-                Custom Solutions
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/contact" className="hover:text-white">
-                Bulk Orders
-              </Link>
-            </li>
-
+            <li>Custom Solutions</li>
+            <li>Bulk Orders</li>
           </ul>
         </div>
 
-
-        {/* Contact */}
+        {/* CONTACT */}
         <div>
-          <h3 className="text-white font-semibold text-lg mb-4">
+          <h3 className="text-white text-lg font-semibold mb-4">
             Contact
           </h3>
 
-          <ul className="space-y-3">
+          <p className="text-sm mb-2">
+            +91 7011372679
+          </p>
 
-            <li>
-              <a href="tel:+917011372679" className="hover:text-white">
-                +91 7011372679
-              </a>
-            </li>
+          <p className="text-sm mb-2">
+            business@kanvekpackaging.com
+          </p>
 
-            <li>
-              <a
-                href="mailto:business@kanvekpackaging.com"
-                className="hover:text-white"
-              >
-                business@kanvekpackaging.com
-              </a>
-            </li>
-
-            <li>
-              Rohad, Haryana – 124501
-            </li>
-
-          </ul>
+          <p className="text-sm leading-relaxed">
+            Plot No. 407, KH No. 15/6,<br/>
+            Kakrola Housing Complex,<br/>
+            New Delhi – 110078, India
+          </p>
         </div>
 
       </div>
 
+      {/* BOTTOM */}
+      <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+        © 2026 Kanvek Packaging. All rights reserved.
+      </div>
 
-      {/* Bottom Bar */}
-
-      <div className="border-t border-slate-800 text-center py-6 text-gray-500 text-sm">
-© {new Date().getFullYear()} Kanvek Packaging. All rights reserved.
-</div>
     </footer>
   );
 }
