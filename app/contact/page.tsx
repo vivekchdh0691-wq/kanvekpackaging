@@ -1,7 +1,13 @@
 "use client";
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
+let emailjs;
 
+const loadEmailJS = async () => {
+  if (!emailjs) {
+    emailjs = await import("@emailjs/browser");
+  }
+  return emailjs;
+};
 export default function ContactPage() {
 
 const [form, setForm] = useState({
@@ -15,21 +21,24 @@ const handleChange = (e:any) => {
 setForm({...form, [e.target.name]: e.target.value});
 };
 
-const sendEmail = (e:any) => {
-e.preventDefault();
+const sendEmail = async (e:any) => {
+  e.preventDefault();
 
-emailjs.send(
-"service_xrvz4aw",
-"template_vz1mvlb",
-form,
-"G-RqhhhPJxM97TKkS"
-)
-.then(() => {
-alert("Enquiry sent successfully!");
-})
-.catch(() => {
-alert("Failed to send enquiry.");
-});
+  try {
+    const emailjsLib = await loadEmailJS();
+
+    await emailjsLib.default.send(
+      "service_xrvz4aw",
+      "template_vz1mvlb",
+      form,
+      "G-RqhhhPJxM97TKkS"
+    );
+
+    alert("Enquiry sent successfully!");
+  } catch (error) {
+    console.error(error);
+    alert("Failed to send enquiry.");
+  }
 };
 
 return (
