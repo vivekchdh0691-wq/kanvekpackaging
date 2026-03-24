@@ -48,8 +48,11 @@ export default function Footer() {
               </a>
             </li>
 
-            <li>Custom Solutions</li>
-            <li>Bulk Orders</li>
+            <li>
+              <a href="/products/water-activated-dispenser" className="hover:text-white">
+                WAT Dispenser
+              </a>
+            </li>
           </ul>
         </div>
 
