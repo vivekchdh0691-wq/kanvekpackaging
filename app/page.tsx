@@ -78,7 +78,7 @@ return ( <main className="bg-gray-50 text-gray-800">
 
       {/* IMAGE */}
       <img
-        src="/tape.png"
+        src="/hero.png"
         alt="Water Activated Tape"
         className="relative z-10 object-contain w-[500px] drop-shadow-xl animate-[float_4s_ease-in-out_infinite]"
       />
