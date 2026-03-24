@@ -1,201 +1,214 @@
-import ProductGallery from "../../components/ProductGallery";
-
 export const metadata = {
   title: "Reinforced Water Activated Tape | Kraft Carton Sealing Tape | Kanvek Packaging",
   description:
-    "Fiberglass reinforced water activated kraft tape for strong carton sealing. Ideal for ecommerce packaging, logistics shipments and export packaging.",
+    "Fiberglass reinforced water activated kraft tape for strong carton sealing. Ideal for ecommerce, logistics and export packaging.",
 };
+
+import ProductGallery from "../../components/ProductGallery";
 
 export default function ReinforcedTape() {
   return (
-    <main className="bg-gray-50">
+    <main className="max-w-7xl mx-auto px-6 py-20 relative">
 
-      {/* HERO */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
+      {/* STICKY CTA */}
+      <div className="fixed bottom-20 right-6 z-50 hidden md:block">
+        <a
+          href="/contact"
+          className="bg-green-700 text-white px-6 py-3 rounded-full shadow-xl hover:bg-green-800 transition"
+        >
+          Get Best Price
+        </a>
+      </div>
 
-        <h1 className="text-4xl font-bold text-gray-900 mb-10">
-          Reinforced Water Activated Tape
-        </h1>
+      {/* TITLE */}
+      <h1 className="text-4xl font-bold text-green-800 mb-8">
+        Reinforced Water Activated Tape
+      </h1>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+      {/* HERO SECTION */}
+      <div className="grid md:grid-cols-2 gap-16 items-center">
 
-          <ProductGallery
-            images={[
-              "/tape.jpg",
-              "/tape2.jpg",
-              "/tape3.jpg",
-              "/tape4.jpg",
-            ]}
-          />
+        <ProductGallery
+          images={[
+            "/tape.jpg",
+            "/tape2.jpg",
+            "/tape3.jpg",
+            "/tape4.jpg",
+          ]}
+        />
 
-          <div>
+        <div>
 
-            <p className="text-lg text-gray-600 mb-6">
-              Reinforced water activated tape is a high-performance kraft paper tape
-              strengthened with fiberglass reinforcement. It forms a permanent bond
-              with corrugated cartons, providing unmatched sealing strength, security,
-              and durability compared to conventional plastic tapes.
-            </p>
+          <p className="text-lg text-gray-600 mb-6">
+            Reinforced water activated tape is a kraft paper packaging tape
+            strengthened with fiberglass reinforcement. It forms a permanent
+            bond with corrugated cartons, providing superior sealing strength
+            and tamper evidence.
+          </p>
 
-            <p className="text-green-800 font-semibold mb-6">
-              It is the only ecological sealing method for packaging that guarantees sustainability while ensuring maximum carton security.
-            </p>
+          <p className="text-lg font-semibold text-gray-800 mb-6">
+            It creates a permanent seal by penetrating carton fibers, making it
+            impossible to remove without visible damage.
+          </p>
 
-            <ul className="space-y-3 text-gray-700 mb-8">
-              <li>✔ Fiberglass reinforced kraft paper</li>
-              <li>✔ Permanent bond with carton fibers</li>
-              <li>✔ Tamper evident security</li>
-              <li>✔ 100% recyclable and eco-friendly</li>
-              <li>✔ Ideal for heavy-duty packaging</li>
-            </ul>
+          <ul className="space-y-3 text-gray-700">
+            <li>✔ Fiberglass reinforced kraft paper</li>
+            <li>✔ Strong permanent carton sealing</li>
+            <li>✔ Tamper-evident packaging</li>
+            <li>✔ Eco friendly and recyclable</li>
+            <li>✔ Ideal for heavy cartons</li>
+          </ul>
 
-            <div className="flex gap-4">
-              <a
-                href="/contact"
-                className="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition"
-              >
-                Request Quote
-              </a>
-
-              <a
-                href="https://wa.me/917011372679"
-                className="border border-green-700 text-green-700 px-6 py-3 rounded-lg hover:bg-green-50 transition"
-              >
-                WhatsApp
-              </a>
-            </div>
-
+          <div className="mt-8 flex gap-4">
+            <a
+              href="/contact"
+              className="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition"
+            >
+              Request Quote
+            </a>
           </div>
+
         </div>
-      </section>
+      </div>
 
-      {/* WHY SECTION */}
-      <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-6">
+      {/* WHY CHOOSE */}
+      <section className="mt-24">
+        <h2 className="text-3xl font-bold mb-10">
+          Why Choose Reinforced WAT?
+        </h2>
 
-          <h2 className="text-3xl font-bold text-center mb-14">
-            Why Reinforced Water Activated Tape is Superior
-          </h2>
+        <div className="grid md:grid-cols-3 gap-8">
 
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h3 className="font-semibold mb-2">Maximum Strength</h3>
+            <p className="text-gray-600 text-sm">
+              Fiberglass reinforcement ensures superior carton sealing for heavy loads.
+            </p>
+          </div>
 
-            <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-              <h3 className="font-semibold text-lg mb-3">Permanent Bond</h3>
-              <p className="text-gray-600 text-sm">
-                The adhesive penetrates into the fibers of corrugated cartons,
-                creating a strong and permanent seal that cannot be removed without damage. 
-              </p>
-            </div>
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h3 className="font-semibold mb-2">Tamper Proof</h3>
+            <p className="text-gray-600 text-sm">
+              Cannot be removed without visible damage, ensuring shipment security.
+            </p>
+          </div>
 
-            <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-              <h3 className="font-semibold text-lg mb-3">Eco-Friendly Packaging</h3>
-              <p className="text-gray-600 text-sm">
-                Made from kraft paper and starch adhesive, it is fully recyclable,
-                biodegradable and derived from renewable materials. 
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-              <h3 className="font-semibold text-lg mb-3">High Strength & Security</h3>
-              <p className="text-gray-600 text-sm">
-                Reinforced fibers ensure superior strength and tamper evidence,
-                making it ideal for heavy-duty and export packaging. 
-              </p>
-            </div>
-
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h3 className="font-semibold mb-2">Eco Friendly</h3>
+            <p className="text-gray-600 text-sm">
+              Paper-based and recyclable, supporting sustainable packaging.
+            </p>
           </div>
 
         </div>
       </section>
 
-      {/* BENEFITS */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6">
+      {/* COMPARISON SECTION */}
+      <section className="mt-24">
+        <h2 className="text-3xl font-bold mb-10">
+          Reinforced vs Non-Reinforced Tape
+        </h2>
 
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            Key Benefits for Businesses
-          </h2>
+        <div className="overflow-x-auto">
+          <table className="w-full border border-gray-200 rounded-lg overflow-hidden text-sm">
 
-          <div className="grid md:grid-cols-2 gap-10">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="p-4 text-left">Feature</th>
+                <th className="p-4 text-left">Reinforced</th>
+                <th className="p-4 text-left">Non-Reinforced</th>
+              </tr>
+            </thead>
 
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h3 className="font-semibold mb-3">Reduced Packaging Cost</h3>
-              <p className="text-gray-600 text-sm">
-                Only one strip is required for sealing, unlike plastic tape which often needs multiple layers, reducing overall material usage. 
-              </p>
-            </div>
+            <tbody>
 
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h3 className="font-semibold mb-3">Improved Brand Image</h3>
-              <p className="text-gray-600 text-sm">
-                Eco-friendly packaging enhances brand perception and builds trust among environmentally conscious customers.
-              </p>
-            </div>
+              <tr className="border-b">
+                <td className="p-4 font-medium">Strength</td>
+                <td className="p-4">High</td>
+                <td className="p-4">Medium</td>
+              </tr>
 
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h3 className="font-semibold mb-3">Better Unboxing Experience</h3>
-              <p className="text-gray-600 text-sm">
-                Clean and professional sealing improves customer satisfaction and packaging presentation. 
-              </p>
-            </div>
+              <tr className="border-b">
+                <td className="p-4 font-medium">Material</td>
+                <td className="p-4">Kraft + Fiberglass</td>
+                <td className="p-4">Kraft Paper</td>
+              </tr>
 
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h3 className="font-semibold mb-3">Future-Ready Packaging</h3>
-              <p className="text-gray-600 text-sm">
-                Sustainable materials help businesses comply with future environmental regulations and reduce plastic dependency.
-              </p>
-            </div>
+              <tr className="border-b">
+                <td className="p-4 font-medium">Usage</td>
+                <td className="p-4">Heavy cartons</td>
+                <td className="p-4">Light cartons</td>
+              </tr>
 
-          </div>
+              <tr className="border-b">
+                <td className="p-4 font-medium">Security</td>
+                <td className="p-4">Tamper Proof</td>
+                <td className="p-4">Basic</td>
+              </tr>
 
+              <tr>
+                <td className="p-4 font-medium">Eco Friendly</td>
+                <td className="p-4">Yes</td>
+                <td className="p-4">Yes</td>
+              </tr>
+
+            </tbody>
+          </table>
         </div>
       </section>
 
       {/* APPLICATIONS */}
-      <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="mt-24">
+        <h2 className="text-3xl font-bold mb-10">Applications</h2>
 
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            Applications
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-
-            <div className="bg-gray-50 p-6 rounded-xl shadow">
-              E-commerce packaging
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-xl shadow">
-              Export & heavy-duty cartons
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-xl shadow">
-              Warehouse & logistics operations
-            </div>
-
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            E-commerce packaging
           </div>
-
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            Export packaging
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            Heavy logistics shipments
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-green-700 text-white py-20 text-center">
-
-        <h2 className="text-3xl font-bold mb-4">
-          Upgrade Your Packaging to Eco-Friendly Solutions
+      {/* TECH SPECS */}
+      <section className="mt-24">
+        <h2 className="text-3xl font-bold mb-10">
+          Technical Specifications
         </h2>
 
-        <p className="mb-6">
-          Secure your shipments while reducing environmental impact.
-        </p>
+        <div className="overflow-x-auto">
+          <table className="w-full border border-gray-200 rounded-lg overflow-hidden">
 
-        <a
-          href="/contact"
-          className="bg-white text-green-700 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition"
-        >
-          Request Bulk Quote
-        </a>
+            <tbody>
 
+              <tr className="border-b">
+                <td className="p-4 font-semibold bg-gray-50">Tape Type</td>
+                <td className="p-4">Reinforced Water Activated Kraft Tape</td>
+              </tr>
+
+              <tr className="border-b">
+                <td className="p-4 font-semibold bg-gray-50">Material</td>
+                <td className="p-4">Kraft Paper with Fiberglass Reinforcement</td>
+              </tr>
+
+              <tr className="border-b">
+                <td className="p-4 font-semibold bg-gray-50">Adhesive</td>
+                <td className="p-4">Water Activated Adhesive</td>
+              </tr>
+
+              <tr>
+                <td className="p-4 font-semibold bg-gray-50">Applications</td>
+                <td className="p-4">E-commerce, Logistics, Export Packaging</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+        </div>
       </section>
 
     </main>
