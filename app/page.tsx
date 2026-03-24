@@ -78,7 +78,10 @@ return ( <main className="bg-gray-50 text-gray-800">
 />
 
     </div>
-
+      </div>
+    </div>
+  </section>
+  
   
   <section className="bg-gradient-to-br from-green-50 via-white to-green-100 py-20">
   <div className="max-w-7xl mx-auto px-6">
