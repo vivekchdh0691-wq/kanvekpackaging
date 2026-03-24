@@ -82,7 +82,7 @@ export default function ContactPage() {
               <div>
                 <p className="font-semibold">Head Office</p>
                 <p>
-                  Plot No. 407, KH No. 15/6
+                  Plot No. 407, KH No. 15/6,<br />
                   Kakrola Housing Complex,<br />
                   New Delhi – 110078, India
                 </p>
