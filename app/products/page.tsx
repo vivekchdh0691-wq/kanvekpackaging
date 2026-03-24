@@ -1,88 +1,113 @@
 import Link from "next/link";
 
 export default function ProductsPage() {
-return ( <main className="max-w-7xl mx-auto px-6 py-20">
+  return (
+    <main className="bg-gradient-to-b from-white to-green-50 min-h-screen">
 
+      {/* HEADER */}
+      <section className="text-center pt-24 pb-16 px-6">
 
-  <h1 className="text-4xl font-bold text-center mb-12">
-    Our Products
-  </h1>
+        <h1 className="text-5xl font-bold text-gray-900 mb-6">
+          Our Products
+        </h1>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-    {/* Product 1 */}
-    <Link
-      href="/products/reinforced-water-activated-tape"
-      className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-lg transition"
-    >
-      <img
-        src="/tape.jpg"
-        alt="Reinforced Water Activated Tape"
-        className="w-full h-56 object-cover"
-      />
-
-      <div className="p-6 flex-grow">
-        <h3 className="text-xl font-semibold mb-2">
-          Reinforced Water Activated Tape
-        </h3>
-
-        <p className="text-gray-600">
-          Fiberglass reinforced kraft tape designed for strong carton sealing.
+        <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+          Explore our range of eco-friendly packaging solutions designed for
+          strong, secure, and sustainable carton sealing.
         </p>
-      </div>
-    </Link>
 
+      </section>
 
+      {/* PRODUCTS GRID */}
+      <section className="max-w-7xl mx-auto px-6 pb-24">
 
-    {/* Product 2 */}
-    <Link
-      href="/products/water-activated-dispenser"
-      className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-lg transition"
-    >
-      <img
-        src="/dispenser.jpg"
-        alt="Water Activated Tape Dispenser"
-        className="w-full h-56 object-cover"
-      />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
 
-      <div className="p-6 flex-grow">
-        <h3 className="text-xl font-semibold mb-2">
-          Water Activated Tape Dispenser
-        </h3>
+          {/* PRODUCT 1 */}
+          <Link href="/products/reinforced-water-activated-tape" className="group">
+            <div className="relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-500">
 
-        <p className="text-gray-600">
-          Manual and electronic dispensers for efficient tape application.
-        </p>
-      </div>
-    </Link>
+              <div className="overflow-hidden">
+                <img
+                  src="/tape.jpg"
+                  alt="Reinforced Water Activated Tape"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
 
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
 
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-gray-900 group-hover:text-green-700 transition">
+                  Reinforced Water Activated Tape
+                </h3>
 
-    {/* Product 3 */}
-    <Link
-      href="/products/custom-printed-tape"
-      className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-lg transition"
-    >
-      <img
-        src="/custom-tape.jpg"
-        alt="Custom Printed Kraft Tape"
-        className="w-full h-56 object-cover"
-      />
+                <p className="text-gray-600 text-sm">
+                  Fiberglass reinforced kraft tape designed for strong, tamper-evident carton sealing.
+                </p>
+              </div>
 
-      <div className="p-6 flex-grow">
-        <h3 className="text-xl font-semibold mb-2">
-          Custom Printed Kraft Tape
-        </h3>
+            </div>
+          </Link>
 
-        <p className="text-gray-600">
-          Reinforced kraft tape printed with your brand for secure packaging.
-        </p>
-      </div>
-    </Link>
+          {/* PRODUCT 2 */}
+          <Link href="/products/water-activated-dispenser" className="group">
+            <div className="relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-500">
 
-  </div>
+              <div className="overflow-hidden">
+                <img
+                  src="/dispenser.jpg"
+                  alt="Water Activated Tape Dispenser"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
 
-</main>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
 
-);
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-gray-900 group-hover:text-green-700 transition">
+                  Water Activated Tape Dispenser
+                </h3>
+
+                <p className="text-gray-600 text-sm">
+                  Manual and electronic dispensers for efficient and consistent tape application.
+                </p>
+              </div>
+
+            </div>
+          </Link>
+
+          {/* PRODUCT 3 */}
+          <Link href="/products/custom-printed-tape" className="group">
+            <div className="relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-500">
+
+              <div className="overflow-hidden">
+                <img
+                  src="/custom-tape.jpg"
+                  alt="Custom Printed Kraft Tape"
+                  className="w-full h-64 object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-gray-900 group-hover:text-green-700 transition">
+                  Custom Printed Kraft Tape
+                </h3>
+
+                <p className="text-gray-600 text-sm">
+                  Reinforced kraft tape printed with your brand for secure and professional packaging.
+                </p>
+              </div>
+
+            </div>
+          </Link>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
 }
