@@ -1,3 +1,7 @@
+/* LOAD TAILWIND FIRST */
+@import "tailwindcss";
+
+/* FLOAT ANIMATION */
 @keyframes floatSlow {
   0% { transform: translateY(0px) rotate(0deg); }
   50% { transform: translateY(-12px) rotate(-1deg); }
@@ -8,8 +12,7 @@
   animation: floatSlow 6s ease-in-out infinite;
 }
 
-@import "tailwindcss";
-
+/* RESET */
 body {
   margin: 0;
   padding: 0;
