@@ -1,6 +1,48 @@
 "use client";
+import { useState } from "react";
+
+let emailjs;
+
+const loadEmailJS = async () => {
+  if (!emailjs) {
+    emailjs = await import("@emailjs/browser");
+  }
+  return emailjs;
+};
 
 export default function ContactPage() {
+
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+  });
+
+  const handleChange = (e: any) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = async (e: any) => {
+    e.preventDefault();
+
+    try {
+      const emailjsLib = await loadEmailJS();
+
+      await emailjsLib.default.send(
+        "service_xrvz4aw",
+        "template_vz1mvlb",
+        form,
+        "G-RqhhhPJxM97TKkS"
+      );
+
+      alert("Enquiry sent successfully!");
+    } catch (error) {
+      console.error(error);
+      alert("Failed to send enquiry.");
+    }
+  };
+
   return (
     <main className="max-w-7xl mx-auto px-6 py-24">
 
@@ -10,7 +52,7 @@ export default function ContactPage() {
 
       <div className="grid md:grid-cols-2 gap-16">
 
-        {/* LEFT SIDE */}
+        {/* LEFT */}
         <div className="space-y-10">
 
           <div className="bg-green-50 p-8 rounded-2xl">
@@ -38,7 +80,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <p className="font-semibold">Head Office Address</p>
+                <p className="font-semibold">Head-Office Address</p>
                 <p>
                   Kakrola Housing Complex,<br />
                   New Delhi, India
@@ -64,18 +106,14 @@ export default function ContactPage() {
 
         </div>
 
-        {/* RIGHT SIDE FORM */}
-        <form
-          action="https://formsubmit.co/business@kanvekpackaging.com"
-          method="POST"
-          className="space-y-6"
-        >
+        {/* RIGHT FORM */}
+        <form onSubmit={sendEmail} className="space-y-6">
 
           <input
             type="text"
             name="name"
             placeholder="Your Name"
-            required
+            onChange={handleChange}
             className="w-full border rounded-lg px-4 py-3"
           />
 
@@ -83,7 +121,7 @@ export default function ContactPage() {
             type="email"
             name="email"
             placeholder="Email"
-            required
+            onChange={handleChange}
             className="w-full border rounded-lg px-4 py-3"
           />
 
@@ -91,19 +129,20 @@ export default function ContactPage() {
             type="text"
             name="phone"
             placeholder="Phone Number"
+            onChange={handleChange}
             className="w-full border rounded-lg px-4 py-3"
           />
 
           <textarea
             name="message"
             placeholder="Message"
-            required
+            onChange={handleChange}
             className="w-full border rounded-lg px-4 py-3 h-32"
           />
 
           <button
             type="submit"
-            className="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition"
+            className="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800"
           >
             Send Enquiry
           </button>
@@ -112,7 +151,7 @@ export default function ContactPage() {
 
       </div>
 
-      {/* GOOGLE MAP */}
+      {/* MAP */}
       <div className="mt-16 rounded-2xl overflow-hidden shadow">
         <iframe
           src="https://maps.google.com/maps?q=Kakrola%20Housing%20Complex%20New%20Delhi&output=embed"
