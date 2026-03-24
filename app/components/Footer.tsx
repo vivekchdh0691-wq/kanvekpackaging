@@ -37,14 +37,14 @@ export default function Footer() {
 
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/products/non-reinforced-wat" className="hover:text-white">
-                Non-Reinforced WAT
+              <a href="/products/reinforced-water-activated-tape" className="hover:text-white">
+                Reinforced WAT
               </a>
             </li>
 
             <li>
-              <a href="/products/reinforced-water-activated-tape" className="hover:text-white">
-                Reinforced WAT
+              <a href="/products/non-reinforced-wat" className="hover:text-white">
+                Non-Reinforced WAT
               </a>
             </li>
 
