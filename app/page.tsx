@@ -11,7 +11,7 @@ export default function Home() {
     <main className="bg-gray-50 text-gray-800">
 
       {/* HERO */}
-      <section className="bg-gradient-to-br from-green-50 via-white to-green-100 pt-28 pb-20">
+      <section className="bg-gradient-to-br from-white via-green-50 to-green-100 pt-28 pb-20">
 
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
 
@@ -51,24 +51,24 @@ export default function Home() {
 
           </div>
 
-          {/* RIGHT IMAGE */}
-          <div className="relative flex justify-center items-center">
+        {/* RIGHT IMAGE */}
+<div className="relative flex justify-center items-center">
 
-            {/* GLOW */}
-            <div className="absolute w-[420px] h-[420px] bg-green-200 rounded-full blur-3xl opacity-40"></div>
+  {/* BACKGROUND GLOW (offset for depth) */}
+  <div className="absolute right-10 top-10 w-[420px] h-[420px] bg-green-300 rounded-full blur-[120px] opacity-30"></div>
 
-            {/* CARD */}
-            <div className="relative bg-white rounded-3xl shadow-2xl p-6 z-10">
+  {/* IMAGE CONTAINER */}
+  <div className="relative z-10">
 
-              <img
-                src="/hero.png"
-                alt="Water Activated Tape"
-                className="w-[420px] h-auto object-contain"
-              />
+    <img
+      src="/hero.png"
+      alt="Water Activated Tape"
+      className="w-[380px] lg:w-[420px] object-contain drop-shadow-2xl"
+    />
 
-            </div>
+  </div>
 
-          </div>
+</div>
 
         </div>
       </section>
