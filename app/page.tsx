@@ -54,52 +54,57 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ECO SECTION - WORLD CLASS */}
+      {/* ECO SECTION - NEXT LEVEL CRAZY */}
 <section className="relative mx-6 my-20">
 
-  <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.25)]">
+  <div className="relative rounded-3xl overflow-hidden shadow-[0_25px_80px_rgba(0,0,0,0.35)]">
 
     {/* BACKGROUND IMAGE */}
     <img
       src="/sustainable.jpg"
       alt="Eco Packaging"
-      className="absolute inset-0 w-full h-full object-cover"
+      className="absolute inset-0 w-full h-full object-cover scale-110 blur-[6px]"
     />
 
-    {/* SOFT OVERLAY */}
-    <div className="absolute inset-0 bg-black/40"></div>
+    {/* DARK OVERLAY */}
+    <div className="absolute inset-0 bg-black/70"></div>
 
-    {/* CONTENT WRAPPER */}
-    <div className="relative max-w-7xl mx-auto px-10 py-28 grid md:grid-cols-2 items-center">
+    {/* GRADIENT LIGHT (for premium feel) */}
+    <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
 
-      {/* LEFT SIDE IMAGE SPACE (keeps balance) */}
-      <div></div>
+    {/* FLOATING GLOW */}
+    <div className="absolute w-[400px] h-[400px] bg-green-400/20 rounded-full blur-3xl top-10 left-10 animate-pulse"></div>
 
-      {/* GLASS CONTENT CARD */}
-      <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-10 shadow-2xl">
+    {/* CONTENT */}
+    <div className="relative max-w-7xl mx-auto px-10 py-32 grid md:grid-cols-2 items-center">
 
-        <span className="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-medium text-white mb-4">
+      {/* TEXT CONTENT (LEFT SIDE) */}
+      <div className="space-y-6 max-w-xl">
+
+        <span className="inline-block bg-white/10 backdrop-blur px-4 py-1 rounded-full text-sm font-medium text-green-200 border border-white/20">
           Sustainable Packaging 🌱
         </span>
 
-        <h2 className="text-4xl font-bold text-white leading-tight mb-6">
-          Eco-Friendly Carton Sealing Solution
+        <h2 className="text-5xl font-bold text-white leading-tight">
+          Eco-Friendly Carton <br /> Sealing Solution
         </h2>
 
-        <p className="text-gray-200 text-lg leading-relaxed mb-4">
+        <p className="text-gray-300 text-lg leading-relaxed">
           <strong>Gummed Tape (Water Activated Tape)</strong> is the most economical and eco-friendly carton sealing solution available today, offering a perfect balance of <strong>sustainability, strength, and cost-efficiency</strong>. Made from <strong>natural kraft paper</strong> and <strong>starch-based adhesive</strong>, it is <strong>100% biodegradable</strong> and <strong>fully recyclable along with cartons</strong>, eliminating the need for plastic tapes.
         </p>
 
-        <p className="text-gray-200 text-lg leading-relaxed">
+        <p className="text-gray-300 text-lg leading-relaxed">
           Its <strong>superior bonding</strong> reduces tape usage while ensuring <strong>secure, tamper-evident sealing</strong>. At <strong>Kanvek Packaging</strong>, we are committed to driving the shift towards <strong>sustainable packaging</strong> by providing solutions that <strong>reduce environmental impact</strong> while delivering <strong>long-term cost benefits</strong> to businesses.
         </p>
 
       </div>
 
+      {/* RIGHT SIDE EMPTY (keeps content away from box) */}
+      <div></div>
+
     </div>
   </div>
 </section>
-
       {/* TRUST */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
