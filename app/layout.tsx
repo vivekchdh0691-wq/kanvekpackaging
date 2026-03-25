@@ -38,15 +38,19 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-300 h-20">
 
             {/* LOGO */}
-            <a href="/" className="flex items-center">
-              <Image
-                src="/logo.png"
-                alt="Kanvek Packaging"
-                width={130}
-                height={40}
-                className="object-contain transition-all duration-300"
-              />
-            </a>
+<a href="/" className="flex items-center">
+  <div className="flex items-center space-x-1 font-semibold tracking-wide">
+
+    <span className="text-2xl text-gray-900">
+      KANVEK
+    </span>
+
+    <span className="text-2xl text-gray-400 font-light">
+      PACKAGING
+    </span>
+
+  </div>
+</a>
 
             {/* DESKTOP NAV */}
             <nav className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
