@@ -11,7 +11,7 @@ export default function Footer() {
           </h3>
 
           <p className="text-sm leading-relaxed">
-            Leading supplier of sustainable water-activated tapes for e-commerce and export packaging.
+            Leading manufacturer of Reinforced & Non-Reinforced Water-Activated Tapes for E-commerce and Export packaging.
           </p>
         </div>
 
