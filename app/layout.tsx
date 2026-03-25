@@ -37,21 +37,52 @@ export default function RootLayout({
 
           <div className="max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-300 h-20">
 
-            {/* LOGO - RESPONSIVE PREMIUM */}
-<a href="/" className="flex items-center group">
+            {/* LOGO - ICON + TEXT (TAPE CONCEPT) */}
+<a href="/" className="flex items-center gap-2 group">
 
-  <span className="text-xl md:text-3xl font-extrabold tracking-wider text-green-700">
-    KANVEK
-  </span>
+  {/* ICON */}
+  <svg
+    width="36"
+    height="36"
+    viewBox="0 0 100 100"
+    className="transition-transform duration-300 group-hover:scale-110"
+  >
+    {/* outer roll */}
+    <circle cx="50" cy="50" r="40" stroke="#15803d" strokeWidth="6" fill="none" />
 
-  <span className="text-xl md:text-3xl font-light tracking-wide text-gray-700 ml-1 md:ml-2 relative">
-    PACKAGING
+    {/* inner core */}
+    <circle cx="50" cy="50" r="18" fill="#15803d" />
 
-    {/* underline accent */}
-    <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-green-700 scale-x-0 group-hover:scale-x-100 origin-left transition duration-300"></span>
-  </span>
+    {/* tape strip */}
+    <path
+      d="M50 50 L90 70"
+      stroke="#15803d"
+      strokeWidth="6"
+      strokeLinecap="round"
+    />
+  </svg>
+
+  {/* TEXT */}
+  <div className="flex items-baseline">
+
+    <span className="text-xl md:text-3xl font-extrabold tracking-wider text-gray-900">
+      KANVE
+    </span>
+
+    {/* Stylized K */}
+    <span className="text-xl md:text-3xl font-extrabold text-green-700 relative ml-1">
+      K
+      <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-green-700 scale-x-0 group-hover:scale-x-100 origin-left transition"></span>
+    </span>
+
+    <span className="text-xl md:text-3xl font-light text-gray-500 ml-2">
+      PACKAGING
+    </span>
+
+  </div>
 
 </a>
+            
             {/* DESKTOP NAV */}
             <nav className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
 
