@@ -37,16 +37,20 @@ export default function RootLayout({
 
           <div className="max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-300 h-20">
 
-            {/* LOGO */}
-<div style={{color: "red"}}>CHECK NAVBAR</div>
+            {/* LOGO - STRONG BRAND */}
+<a href="/" className="flex items-center group">
 
-<a href="/" className="flex items-center">
-  <span className="text-2xl font-semibold tracking-wide text-gray-900">
+  <span className="text-3xl font-extrabold tracking-wider text-green-700">
     KANVEK
   </span>
-  <span className="text-2xl font-light text-gray-400 ml-1">
+
+  <span className="text-3xl font-light tracking-wide text-gray-700 ml-2 relative">
     PACKAGING
+
+    {/* underline accent */}
+    <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-green-700 scale-x-0 group-hover:scale-x-100 origin-left transition duration-300"></span>
   </span>
+
 </a>
 
             {/* DESKTOP NAV */}
