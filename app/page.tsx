@@ -54,7 +54,7 @@ export default function Home() {
         </div>
       </section>
 
-    {/* ECO SECTION - CLEAN PREMIUM */}
+    {/* ECO SECTION - BASE CLEAN */}
 <section className="mx-6 my-20">
 
   <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.25)]">
@@ -66,20 +66,16 @@ export default function Home() {
       className="absolute inset-0 w-full h-full object-cover"
     />
 
-    {/* VERY LIGHT OVERLAY (just for readability) */}
-    <div className="absolute inset-0 bg-black/20"></div>
-
     {/* CONTENT */}
     <div className="relative max-w-7xl mx-auto px-12 py-28 grid md:grid-cols-2 items-center">
 
-      {/* TEXT */}
-      <div className="space-y-6 max-w-xl">
+      <div className="space-y-6 max-w-xl text-white">
 
-        <span className="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-medium text-white backdrop-blur-sm">
+        <span className="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-medium">
           Sustainable Packaging 🌱
         </span>
 
-        <h2 className="text-5xl font-bold text-white leading-tight">
+        <h2 className="text-5xl font-bold leading-tight">
           Eco-Friendly Carton <br /> Sealing Solution
         </h2>
 
@@ -93,7 +89,6 @@ export default function Home() {
 
       </div>
 
-      {/* EMPTY SPACE */}
       <div></div>
 
     </div>
