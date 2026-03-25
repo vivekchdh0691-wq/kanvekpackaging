@@ -37,15 +37,18 @@ export default function RootLayout({
 
           <div className="max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-300 h-20">
 
-            {/* LOGO - PREMIUM BOLD */}
+            {/* LOGO - RESPONSIVE PREMIUM */}
 <a href="/" className="flex items-center group">
 
-  <span className="text-3xl font-extrabold tracking-wide text-gray-900 group-hover:text-green-700 transition duration-300">
+  <span className="text-xl md:text-3xl font-extrabold tracking-wider text-green-700">
     KANVEK
   </span>
 
-  <span className="text-3xl font-light tracking-wide text-gray-400 ml-2 group-hover:text-gray-600 transition duration-300">
+  <span className="text-xl md:text-3xl font-light tracking-wide text-gray-700 ml-1 md:ml-2 relative">
     PACKAGING
+
+    {/* underline accent */}
+    <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-green-700 scale-x-0 group-hover:scale-x-100 origin-left transition duration-300"></span>
   </span>
 
 </a>
