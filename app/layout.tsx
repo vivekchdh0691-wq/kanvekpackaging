@@ -37,38 +37,19 @@ export default function RootLayout({
 
           <div className="max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-300 h-20">
 
-            {/* LOGO - PRO LEVEL CLEAN */}
-<a href="/" className="flex items-center gap-3">
+            {/* LOGO - STRONG WORDMARK */}
+<a href="/" className="flex items-center group">
 
-  {/* TAPE ROLL ICON */}
-  <svg
-    width="34"
-    height="34"
-    viewBox="0 0 100 100"
-    className="shrink-0"
-  >
-    {/* outer */}
-    <circle cx="50" cy="50" r="40" stroke="#166534" strokeWidth="6" fill="none"/>
+  <span className="text-xl md:text-3xl font-extrabold tracking-wide text-gray-900">
+    KANVEK
+  </span>
 
-    {/* inner */}
-    <circle cx="50" cy="50" r="18" fill="#166534"/>
+  <span className="text-xl md:text-3xl font-medium tracking-wide text-gray-700 ml-2 relative">
+    PACKAGING
 
-    {/* tape cut */}
-    <line x1="65" y1="65" x2="90" y2="80" stroke="#166534" strokeWidth="6" strokeLinecap="round"/>
-  </svg>
-
-  {/* TEXT */}
-  <div className="flex items-baseline">
-
-    <span className="text-xl md:text-2xl font-semibold tracking-wide text-gray-900">
-      KANVEK
-    </span>
-
-    <span className="text-xl md:text-2xl font-light text-gray-500 ml-2">
-      PACKAGING
-    </span>
-
-  </div>
+    {/* subtle industrial underline */}
+    <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-green-700 scale-x-0 group-hover:scale-x-100 origin-left transition duration-300"></span>
+  </span>
 
 </a>
             
