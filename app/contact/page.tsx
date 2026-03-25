@@ -98,7 +98,7 @@ export default function ContactPage() {
             <ul className="space-y-4">
               <li>✔ Premium quality water-activated tapes</li>
               <li>✔ Competitive pricing for bulk orders</li>
-              <li>✔ Reliable delivery across India</li>
+              <li>✔ Reliable delivery across World</li>
               <li>✔ Expert packaging consultation</li>
             </ul>
           </div>
