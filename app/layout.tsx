@@ -39,17 +39,12 @@ export default function RootLayout({
 
             {/* LOGO */}
 <a href="/" className="flex items-center">
-  <div className="flex items-center space-x-1 font-semibold tracking-wide">
-
-    <span className="text-2xl text-gray-900">
-      KANVEK
-    </span>
-
-    <span className="text-2xl text-gray-400 font-light">
-      PACKAGING
-    </span>
-
-  </div>
+  <span className="text-2xl font-semibold tracking-wide text-gray-900">
+    KANVEK
+  </span>
+  <span className="text-2xl font-light text-gray-400 ml-1">
+    PACKAGING
+  </span>
 </a>
 
             {/* DESKTOP NAV */}
