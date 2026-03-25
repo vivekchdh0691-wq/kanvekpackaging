@@ -54,47 +54,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ECO SECTION - FINAL PREMIUM */}
-<section className="relative overflow-hidden rounded-3xl shadow-[10px_10px_30px_rgba(0,0,0,0.25)] mx-6 my-16">
+      {/* ECO SECTION - WORLD CLASS */}
+<section className="relative mx-6 my-20">
 
-  {/* BACKGROUND IMAGE */}
-  <div className="absolute inset-0">
+  <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.25)]">
+
+    {/* BACKGROUND IMAGE */}
     <img
       src="/sustainable.jpg"
-      alt="Eco Background"
-      className="w-full h-full object-cover"
+      alt="Eco Packaging"
+      className="absolute inset-0 w-full h-full object-cover"
     />
 
-    {/* DARK OVERLAY FOR READABILITY */}
-    <div className="absolute inset-0 bg-black/50"></div>
-  </div>
+    {/* SOFT OVERLAY */}
+    <div className="absolute inset-0 bg-black/40"></div>
 
-  <div className="relative max-w-7xl mx-auto px-8 py-24 grid md:grid-cols-2 gap-16 items-center text-white">
+    {/* CONTENT WRAPPER */}
+    <div className="relative max-w-7xl mx-auto px-10 py-28 grid md:grid-cols-2 items-center">
 
-    {/* LEFT SIDE (EMPTY / SPACING FOR BALANCE) */}
-    <div></div>
+      {/* LEFT SIDE IMAGE SPACE (keeps balance) */}
+      <div></div>
 
-    {/* CONTENT */}
-    <div className="space-y-6">
+      {/* GLASS CONTENT CARD */}
+      <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-10 shadow-2xl">
 
-      <span className="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-medium backdrop-blur">
-        Sustainable Packaging 🌱
-      </span>
+        <span className="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-medium text-white mb-4">
+          Sustainable Packaging 🌱
+        </span>
 
-      <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-        Eco-Friendly Carton Sealing Solution
-      </h2>
+        <h2 className="text-4xl font-bold text-white leading-tight mb-6">
+          Eco-Friendly Carton Sealing Solution
+        </h2>
 
-      <p className="text-gray-200 text-lg leading-relaxed">
-        <strong>Gummed Tape (Water Activated Tape)</strong> is the most economical and eco-friendly carton sealing solution available today, offering a perfect balance of <strong>sustainability, strength, and cost-efficiency</strong>. Made from <strong>natural kraft paper</strong> and <strong>starch-based adhesive</strong>, it is <strong>100% biodegradable</strong> and <strong>fully recyclable along with cartons</strong>, eliminating the need for plastic tapes.
-      </p>
+        <p className="text-gray-200 text-lg leading-relaxed mb-4">
+          <strong>Gummed Tape (Water Activated Tape)</strong> is the most economical and eco-friendly carton sealing solution available today, offering a perfect balance of <strong>sustainability, strength, and cost-efficiency</strong>. Made from <strong>natural kraft paper</strong> and <strong>starch-based adhesive</strong>, it is <strong>100% biodegradable</strong> and <strong>fully recyclable along with cartons</strong>, eliminating the need for plastic tapes.
+        </p>
 
-      <p className="text-gray-200 text-lg leading-relaxed">
-        Its <strong>superior bonding</strong> reduces tape usage while ensuring <strong>secure, tamper-evident sealing</strong>. At <strong>Kanvek Packaging</strong>, we are committed to driving the shift towards <strong>sustainable packaging</strong> by providing solutions that <strong>reduce environmental impact</strong> while delivering <strong>long-term cost benefits</strong> to businesses.
-      </p>
+        <p className="text-gray-200 text-lg leading-relaxed">
+          Its <strong>superior bonding</strong> reduces tape usage while ensuring <strong>secure, tamper-evident sealing</strong>. At <strong>Kanvek Packaging</strong>, we are committed to driving the shift towards <strong>sustainable packaging</strong> by providing solutions that <strong>reduce environmental impact</strong> while delivering <strong>long-term cost benefits</strong> to businesses.
+        </p>
+
+      </div>
 
     </div>
-
   </div>
 </section>
 
