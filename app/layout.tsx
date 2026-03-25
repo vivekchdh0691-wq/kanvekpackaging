@@ -37,42 +37,21 @@ export default function RootLayout({
 
           <div className="max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-300 h-20">
 
-            {/* LOGO - ICON + TEXT (TAPE CONCEPT) */}
-<a href="/" className="flex items-center gap-2 group">
+            {/* LOGO - TAPE FLOW */}
+<a href="/" className="flex items-center group">
 
-  {/* ICON */}
-  <svg
-    width="36"
-    height="36"
-    viewBox="0 0 100 100"
-    className="transition-transform duration-300 group-hover:scale-110"
-  >
-    {/* outer roll */}
-    <circle cx="50" cy="50" r="40" stroke="#15803d" strokeWidth="6" fill="none" />
-
-    {/* inner core */}
-    <circle cx="50" cy="50" r="18" fill="#15803d" />
-
-    {/* tape strip */}
-    <path
-      d="M50 50 L90 70"
-      stroke="#15803d"
-      strokeWidth="6"
-      strokeLinecap="round"
-    />
-  </svg>
-
-  {/* TEXT */}
-  <div className="flex items-baseline">
+  <div className="flex items-baseline relative">
 
     <span className="text-xl md:text-3xl font-extrabold tracking-wider text-gray-900">
       KANVE
     </span>
 
-    {/* Stylized K */}
-    <span className="text-xl md:text-3xl font-extrabold text-green-700 relative ml-1">
+    <span className="relative text-xl md:text-3xl font-extrabold text-green-700 ml-1">
       K
-      <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-green-700 scale-x-0 group-hover:scale-x-100 origin-left transition"></span>
+
+      {/* flowing tape */}
+      <span className="absolute left-2 top-1/2 w-6 h-[3px] bg-green-700 -rotate-45 origin-left group-hover:w-10 transition-all duration-300"></span>
+
     </span>
 
     <span className="text-xl md:text-3xl font-light text-gray-500 ml-2">
