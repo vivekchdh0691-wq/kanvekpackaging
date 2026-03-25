@@ -61,7 +61,7 @@ export default function Home() {
 
     {/* BACKGROUND IMAGE */}
     <img
-      src="/sustainable 2.jpg"
+      src="/sustainable2.jpg"
       alt="Eco Packaging"
       className="absolute inset-0 w-full h-full object-cover"
     />
