@@ -54,6 +54,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ECO SECTION */}
+<section className="relative bg-gradient-to-br from-green-700 via-green-600 to-green-800 text-white overflow-hidden">
+
+  {/* glow effects */}
+  <div className="absolute w-96 h-96 bg-green-400 rounded-full blur-3xl opacity-20 top-[-50px] left-[-50px]"></div>
+  <div className="absolute w-80 h-80 bg-green-300 rounded-full blur-3xl opacity-20 bottom-[-50px] right-[-50px]"></div>
+
+  <div className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-14 items-center">
+
+    {/* IMAGE */}
+    <div className="relative flex justify-center">
+      <img
+        src="/sustainable.jpg"
+        alt="Eco Friendly Packaging"
+        className="w-[450px] rounded-2xl shadow-2xl object-cover"
+      />
+    </div>
+
+    {/* CONTENT */}
+    <div className="space-y-6">
+
+      <span className="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-medium">
+        Sustainable Packaging 🌱
+      </span>
+
+      <h2 className="text-4xl font-bold leading-tight">
+        Eco-Friendly Carton Sealing Solution
+      </h2>
+
+      <p className="text-green-100 text-lg leading-relaxed">
+        <strong>Gummed Tape (Water Activated Tape)</strong> is the most economical and eco-friendly carton sealing solution available today, offering a perfect balance of <strong>sustainability, strength, and cost-efficiency</strong>. Made from <strong>natural kraft paper</strong> and <strong>starch-based adhesive</strong>, it is <strong>100% biodegradable</strong> and <strong>fully recyclable along with cartons</strong>, eliminating the need for plastic tapes.
+      </p>
+
+      <p className="text-green-100 text-lg leading-relaxed">
+        Its <strong>superior bonding</strong> reduces tape usage while ensuring <strong>secure, tamper-evident sealing</strong>. At <strong>Kanvek Packaging</strong>, we are committed to driving the shift towards <strong>sustainable packaging</strong> by providing solutions that <strong>reduce environmental impact</strong> while delivering <strong>long-term cost benefits</strong> to businesses.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
       {/* TRUST */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
