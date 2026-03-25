@@ -38,6 +38,8 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-300 h-20">
 
             {/* LOGO */}
+<div style={{color: "red"}}>CHECK NAVBAR</div>
+
 <a href="/" className="flex items-center">
   <span className="text-2xl font-semibold tracking-wide text-gray-900">
     KANVEK
