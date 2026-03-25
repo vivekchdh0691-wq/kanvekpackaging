@@ -54,29 +54,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ECO SECTION - IMPROVED */}
-<section className="relative bg-gradient-to-br from-green-600 via-green-500 to-green-600 text-white overflow-hidden">
+      {/* ECO SECTION - FINAL PREMIUM */}
+<section className="relative overflow-hidden rounded-3xl shadow-[10px_10px_30px_rgba(0,0,0,0.25)] mx-6 my-16">
 
-  {/* soft glow */}
-  <div className="absolute w-[500px] h-[500px] bg-green-300 rounded-full blur-3xl opacity-20 top-[-100px] left-[-100px]"></div>
-  <div className="absolute w-[400px] h-[400px] bg-green-200 rounded-full blur-3xl opacity-20 bottom-[-100px] right-[-100px]"></div>
+  {/* BACKGROUND IMAGE */}
+  <div className="absolute inset-0">
+    <img
+      src="/sustainable.jpg"
+      alt="Eco Background"
+      className="w-full h-full object-cover"
+    />
 
-  <div className="max-w-7xl mx-auto px-6 py-28 grid md:grid-cols-2 gap-16 items-center">
+    {/* DARK OVERLAY FOR READABILITY */}
+    <div className="absolute inset-0 bg-black/50"></div>
+  </div>
 
-    {/* IMAGE */}
-    <div className="relative flex justify-center md:justify-start">
-      <div className="relative">
+  <div className="relative max-w-7xl mx-auto px-8 py-24 grid md:grid-cols-2 gap-16 items-center text-white">
 
-        {/* glow behind image */}
-        <div className="absolute inset-0 bg-white/10 rounded-3xl blur-2xl scale-110"></div>
-
-        <img
-          src="/sustainable.jpg"
-          alt="Eco Friendly Packaging"
-          className="relative w-[520px] md:w-[560px] rounded-3xl shadow-2xl object-cover"
-        />
-      </div>
-    </div>
+    {/* LEFT SIDE (EMPTY / SPACING FOR BALANCE) */}
+    <div></div>
 
     {/* CONTENT */}
     <div className="space-y-6">
@@ -89,11 +85,11 @@ export default function Home() {
         Eco-Friendly Carton Sealing Solution
       </h2>
 
-      <p className="text-green-50 text-lg leading-relaxed">
+      <p className="text-gray-200 text-lg leading-relaxed">
         <strong>Gummed Tape (Water Activated Tape)</strong> is the most economical and eco-friendly carton sealing solution available today, offering a perfect balance of <strong>sustainability, strength, and cost-efficiency</strong>. Made from <strong>natural kraft paper</strong> and <strong>starch-based adhesive</strong>, it is <strong>100% biodegradable</strong> and <strong>fully recyclable along with cartons</strong>, eliminating the need for plastic tapes.
       </p>
 
-      <p className="text-green-50 text-lg leading-relaxed">
+      <p className="text-gray-200 text-lg leading-relaxed">
         Its <strong>superior bonding</strong> reduces tape usage while ensuring <strong>secure, tamper-evident sealing</strong>. At <strong>Kanvek Packaging</strong>, we are committed to driving the shift towards <strong>sustainable packaging</strong> by providing solutions that <strong>reduce environmental impact</strong> while delivering <strong>long-term cost benefits</strong> to businesses.
       </p>
 
