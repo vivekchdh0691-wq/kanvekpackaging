@@ -54,8 +54,8 @@ export default function Home() {
         </div>
       </section>
 
-     {/* ECO SECTION - BALANCED PREMIUM */}
-<section className="relative mx-6 my-20">
+    {/* ECO SECTION - CLEAN PREMIUM */}
+<section className="mx-6 my-20">
 
   <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.25)]">
 
@@ -63,25 +63,19 @@ export default function Home() {
     <img
       src="/sustainable 2.jpg"
       alt="Eco Packaging"
-      className="absolute inset-0 w-full h-full object-cover scale-105 blur-[3px]"
+      className="absolute inset-0 w-full h-full object-cover"
     />
 
-    {/* LIGHT OVERLAY (NOT TOO DARK) */}
-    <div className="absolute inset-0 bg-black/40"></div>
-
-    {/* LEFT GRADIENT (for readability, not harsh) */}
-    <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
-
-    {/* SOFT GREEN GLOW */}
-    <div className="absolute w-[350px] h-[350px] bg-green-400/20 rounded-full blur-3xl top-10 left-10"></div>
+    {/* VERY LIGHT OVERLAY (just for readability) */}
+    <div className="absolute inset-0 bg-black/20"></div>
 
     {/* CONTENT */}
-    <div className="relative max-w-7xl mx-auto px-10 py-28 grid md:grid-cols-2 items-center">
+    <div className="relative max-w-7xl mx-auto px-12 py-28 grid md:grid-cols-2 items-center">
 
-      {/* TEXT CONTENT */}
+      {/* TEXT */}
       <div className="space-y-6 max-w-xl">
 
-        <span className="inline-block bg-white/10 backdrop-blur px-4 py-1 rounded-full text-sm font-medium text-green-200 border border-white/20">
+        <span className="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-medium text-white backdrop-blur-sm">
           Sustainable Packaging 🌱
         </span>
 
@@ -89,20 +83,21 @@ export default function Home() {
           Eco-Friendly Carton <br /> Sealing Solution
         </h2>
 
-        <p className="text-gray-200 text-lg leading-relaxed">
+        <p className="text-white/90 text-lg leading-relaxed">
           <strong>Gummed Tape (Water Activated Tape)</strong> is the most economical and eco-friendly carton sealing solution available today, offering a perfect balance of <strong>sustainability, strength, and cost-efficiency</strong>. Made from <strong>natural kraft paper</strong> and <strong>starch-based adhesive</strong>, it is <strong>100% biodegradable</strong> and <strong>fully recyclable along with cartons</strong>, eliminating the need for plastic tapes.
         </p>
 
-        <p className="text-gray-200 text-lg leading-relaxed">
+        <p className="text-white/90 text-lg leading-relaxed">
           Its <strong>superior bonding</strong> reduces tape usage while ensuring <strong>secure, tamper-evident sealing</strong>. At <strong>Kanvek Packaging</strong>, we are committed to driving the shift towards <strong>sustainable packaging</strong> by providing solutions that <strong>reduce environmental impact</strong> while delivering <strong>long-term cost benefits</strong> to businesses.
         </p>
 
       </div>
 
-      {/* EMPTY SPACE (keeps layout premium) */}
+      {/* EMPTY SPACE */}
       <div></div>
 
     </div>
+
   </div>
 </section>
       {/* TRUST */}
