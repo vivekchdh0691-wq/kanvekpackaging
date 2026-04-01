@@ -37,14 +37,19 @@ export default function RootLayout({
 
           <div className="max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-300 h-20">
 
-            {/* LOGO IMAGE - FULL HEIGHT */}
-<a href="/" className="flex items-center h-full">
+            {/* LOGO - STRONG WORDMARK */}
+<a href="/" className="flex items-center group">
 
-  <img
-    src="/kanveklogowebsite.jpg"
-    alt="Kanvek Packaging"
-    className="h-full w-auto object-cover"
-  />
+  <span className="text-xl md:text-3xl font-extrabold tracking-wide text-gray-900">
+    KANVEK
+  </span>
+
+  <span className="text-xl md:text-3xl font-medium tracking-wide text-gray-700 ml-2 relative">
+    PACKAGING
+
+    {/* subtle industrial underline */}
+    <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-green-700 scale-x-0 group-hover:scale-x-100 origin-left transition duration-300"></span>
+  </span>
 
 </a>
             
