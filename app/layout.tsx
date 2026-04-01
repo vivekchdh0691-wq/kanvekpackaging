@@ -37,38 +37,13 @@ export default function RootLayout({
 
           <div className="max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-300 h-20">
 
-            {/* LOGO - FINAL BRAND */}
+            {/* LOGO IMAGE */}
 <a href="/" className="flex items-center">
-
-  <div className="leading-none">
-
-    {/* KANVEK */}
-    <div
-      className="text-white font-extrabold"
-      style={{
-        fontFamily: 'Etna, sans-serif',
-        fontSize: '28px',
-        letterSpacing: '0.5px'
-      }}
-    >
-      Kanvek
-    </div>
-
-    {/* PACKAGING */}
-    <div
-      className="font-semibold"
-      style={{
-        fontFamily: 'Etna, sans-serif',
-        fontSize: '18px',
-        color: '#30d914',
-        marginTop: '-4px'
-      }}
-    >
-      Packaging
-    </div>
-
-  </div>
-
+  <img
+    src="/kanveklogowebsite.jpg"
+    alt="Kanvek Packaging"
+    className="h-10 md:h-12 w-auto object-contain"
+  />
 </a>
             
             {/* DESKTOP NAV */}
