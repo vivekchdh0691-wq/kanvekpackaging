@@ -30,10 +30,7 @@ export default function NonReinforcedPage() {
 
         <ProductGallery
           images={[
-            "/nonreinforced1.jpg",
-            "/nonreinforced2.jpg",
-            "/nonreinforced3.jpg",
-            "/nonreinforced4.jpg",
+            "/nonreinforced1.jpg"
           ]}
         />
 
