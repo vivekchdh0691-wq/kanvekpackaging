@@ -38,12 +38,14 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-300 h-20">
 
             {/* LOGO IMAGE */}
-<a href="/" className="flex items-center">
+<a href="/" className="flex items-center h-full">
+
   <img
     src="/kanveklogowebsite.jpg"
     alt="Kanvek Packaging"
-    className="h-10 md:h-12 w-auto object-contain"
+    className="h-full max-h-12 md:max-h-14 w-auto object-contain"
   />
+
 </a>
             
             {/* DESKTOP NAV */}
