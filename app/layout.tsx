@@ -37,19 +37,37 @@ export default function RootLayout({
 
           <div className="max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-300 h-20">
 
-            {/* LOGO - STRONG WORDMARK */}
-<a href="/" className="flex items-center group">
+            {/* LOGO - FINAL BRAND */}
+<a href="/" className="flex items-center">
 
-  <span className="text-xl md:text-3xl font-extrabold tracking-wide text-gray-900">
-    KANVEK
-  </span>
+  <div className="leading-none">
 
-  <span className="text-xl md:text-3xl font-medium tracking-wide text-gray-700 ml-2 relative">
-    PACKAGING
+    {/* KANVEK */}
+    <div
+      className="text-white font-extrabold"
+      style={{
+        fontFamily: 'Etna, sans-serif',
+        fontSize: '28px',
+        letterSpacing: '0.5px'
+      }}
+    >
+      Kanvek
+    </div>
 
-    {/* subtle industrial underline */}
-    <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-green-700 scale-x-0 group-hover:scale-x-100 origin-left transition duration-300"></span>
-  </span>
+    {/* PACKAGING */}
+    <div
+      className="font-semibold"
+      style={{
+        fontFamily: 'Etna, sans-serif',
+        fontSize: '18px',
+        color: '#30d914',
+        marginTop: '-4px'
+      }}
+    >
+      Packaging
+    </div>
+
+  </div>
 
 </a>
             
